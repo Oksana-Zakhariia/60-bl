@@ -32,3 +32,18 @@
 // minutes = String(minutes).padStart(2, "0");
 // // console.log(minutes);
 // console.log(`${hours}:${minutes}`);
+
+//4. За допомогою циклу for додайте всі парні числа від max до min
+
+// const min = 10;
+// const max = 35;
+
+// let total = 0;
+// for (i = max; i >= min; i -= 1) {
+//     if (i % 2 === 0) {
+//        continue
+//     }
+//     console.log(i);
+//      total += i;
+// }
+// console.log(total);
