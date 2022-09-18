@@ -57,10 +57,58 @@
 //кнопку Cancel, показати alert з рядком "Загальна сума введених чисел дорівнює [число]."
 //Робити перевірку,що користувач ввів саме число,
 //а не довільний набір символів не потрібно.
-let userInput = Number(prompt('Введіть число'));
-let total = 0;
-while (userInput !== 0) {
-    total += userInput
-    userInput = Number(prompt('Введіть число'));
-}
-console.log(total)
+// let userInput = Number(prompt('Введіть число'));
+// let total = 0;
+// while (userInput !== 0) {
+//     total += userInput
+//     userInput = Number(prompt('Введіть число'));
+// }
+// console.log(total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// У змінній min лежить число від 0 до 59.
+// Визначте, в яку чверть години потрапляє це число (у першу, другу, третю чи четверту).
+// [0 до 15) – перша чверть години
+// [15 до 30) – друга чверть години
+// [30 до 45) – третя чверть години
+// [45 до 60) – четверта чверть години
+
+// const min = 55
+// if (min < 15 && min >= 0) {
+//     console.log("перша чверть години")
+// } else if (min >= 15 && min < 30) {
+//     console.log("друга чверть години")
+// } else if (min >= 30 && min < 45) {
+//     console.log("третя чверть години")
+// } else if (min >= 45 && min < 60) {
+//     console.log("четверта чверть години")
+// }
+// else { console.log("ви не потрапили в діапазон години") }
+const min = 55
+switch (true) {
+    case min < 15 && min >= 0:
+        console.log("перша чверть години")
+        break;
+    case min >= 15 && min < 30:
+        console.log("друга чверть години")
+        break;
+    case min >= 30 && min < 45:
+        console.log("третя чверть години")
+        break;
+    case min >= 45 && min < 60:
+        console.log("четверта чверть години")
+        break;
+    default: console.log("ви не потрапили в діапазон години") 
+    }
