@@ -85,7 +85,7 @@
 // [30 до 45) – третя чверть години
 // [45 до 60) – четверта чверть години
 
-// const min = 55
+// const min = 12
 // if (min < 15 && min >= 0) {
 //     console.log("перша чверть години")
 // } else if (min >= 15 && min < 30) {
@@ -96,19 +96,55 @@
 //     console.log("четверта чверть години")
 // }
 // else { console.log("ви не потрапили в діапазон години") }
-const min = 55
-switch (true) {
-    case min < 15 && min >= 0:
-        console.log("перша чверть години")
-        break;
-    case min >= 15 && min < 30:
-        console.log("друга чверть години")
-        break;
-    case min >= 30 && min < 45:
-        console.log("третя чверть години")
-        break;
-    case min >= 45 && min < 60:
-        console.log("четверта чверть години")
-        break;
-    default: console.log("ви не потрапили в діапазон години") 
-    }
+// const min = 55
+// switch (true) {
+//     case min < 15 && min >= 0:
+//         console.log("перша чверть години")
+//         break;
+//     case min >= 15 && min < 30:
+//         console.log("друга чверть години")
+//         break;
+//     case min >= 30 && min < 45:
+//         console.log("третя чверть години")
+//         break;
+//     case min >= 45 && min < 60:
+//         console.log("четверта чверть години")
+//         break;
+//     default: console.log("ви не потрапили в діапазон години")
+//     }
+
+
+// const min = 18
+// if (min < 15) {
+//     console.log("перша чверть години")
+// } else if (min < 30) {
+//     console.log("друга чверть години")
+// } else if (min < 45) {
+//     console.log("третя чверть години")
+// } else if (min < 60) {
+//     console.log("четверта чверть години")
+// }
+// else { console.log("ви не потрапили в діапазон години") }
+
+// ============================================
+
+//Якщо  число ділитися на 3 повертати fizz
+// якщо ділитися на 5 повертати buzz
+//Якщо ділитися на 3 і на 5 повернути fizzbuzz
+
+const num = 21
+for (let i = 1; i <= num; i += 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+    console.log("fizzbuzz")
+}
+
+else if (i % 3 === 0) {
+    console.log ("fizz")
+}
+else if (i % 5 === 0) {
+    console.log ("buzz")
+}
+else {
+    console.log (i)
+}
+}
