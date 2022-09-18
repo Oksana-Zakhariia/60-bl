@@ -132,19 +132,33 @@
 // якщо ділитися на 5 повертати buzz
 //Якщо ділитися на 3 і на 5 повернути fizzbuzz
 
-const num = 21
-for (let i = 1; i <= num; i += 1) {
-    if (i % 3 === 0 && i % 5 === 0) {
-    console.log("fizzbuzz")
-}
+// const num = 21
+// for (let i = 1; i <= num; i += 1) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("fizzbuzz")
+// }
 
-else if (i % 3 === 0) {
-    console.log ("fizz")
-}
-else if (i % 5 === 0) {
-    console.log ("buzz")
+// else if (i % 3 === 0) {
+//     console.log ("fizz")
+// }
+// else if (i % 5 === 0) {
+//     console.log ("buzz")
+// }
+// else {
+//     console.log (i)
+// }
+// }
+// +++++++++++++++++++++++++++++
+    
+   //Дано рядок, що складається із символів, наприклад, 'abcde'.
+// Перевірте, що першим символом цього рядка є буква 'a'.
+// Якщо це так - виведіть 'так', інакше виведіть 'ні'.
+ 
+const string = "abcde";
+if (string[0] === 'a') {
+    console.log("так");
 }
 else {
-    console.log (i)
+  console.log("ні");  
 }
-}
+    
