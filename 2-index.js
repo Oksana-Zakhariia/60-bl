@@ -49,20 +49,37 @@
 ? різних відділів, потрібно порахувати загальну суму зарплат
 */
 
- const managerSalaries = [1000, 1500, 2500, 4000, 5000];
- const developersSalaries = [8000, 40000, 15000];
+//  const managerSalaries = [1000, 1500, 2500, 4000, 5000];
+//  const developersSalaries = [8000, 40000, 15000];
 
-// const allSalarys = managerSalaries.concat(developersSalaries);
-// let total = 0;
-// for (let i = 0; i < allSalarys.length; i += 1){
-//     total += allSalarys[i];
-// }
+// // const allSalarys = managerSalaries.concat(developersSalaries);
+// // let total = 0;
+// // for (let i = 0; i < allSalarys.length; i += 1){
+// //     total += allSalarys[i];
+// // }
  
-// console.log(total)
-const allSalarys = [...managerSalaries, ...developersSalaries];
-console.log(allSalarys);
-const total = allSalarys.reduce((acc, item) => 
-    acc += item
-, 0)
+// // console.log(total)
+// const allSalarys = [...managerSalaries, ...developersSalaries];
+// console.log(allSalarys);
+// const total = allSalarys.reduce((acc, item) =>
+//     acc += item
+// , 0)
 
-console.log(total)
+
+/* Потрібно розвернути масив у зворотньому напрямку
+ не використовуючи методів масива і не створюючи нові масиви
+ */
+// const array = [7, 7, 7, 3, 5, 5, 5];
+const array = [1, 2, 3, 4, 5, 6, 7];
+// console.log(array.reverse());
+for (let i = 0; i < array.length/2; i += 1) {
+    // console.log(array[i]);
+    const index = array.length - 1 - i 
+    const template = array[i];
+    array[i] = array[index];
+    array[index] = template;
+}
+console.log(array);
+// удачі всім! )))
+
+
