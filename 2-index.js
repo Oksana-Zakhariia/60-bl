@@ -97,11 +97,11 @@
 // }
 // isPalindrome("Поліна неси Ром!");
 
-function isPalindrome(str) {
-  console.log(str);
-  const normalizeString = str.toLowerCase().replaceAll(" ", "");
-  const reversedString = normalizeString.split("").reverse().join("");
-  const palindrome = normalizeString === reversedString;
-  console.log(palindrome);
-}
-isPalindrome("І була пані на палубІ");
+// function isPalindrome(str) {
+//   console.log(str);
+//   const normalizeString = str.toLowerCase().replaceAll(" ", "");
+//   const reversedString = normalizeString.split("").reverse().join("");
+//   const palindrome = normalizeString === reversedString;
+//   console.log(palindrome);
+// }
+// isPalindrome("І була пані на палубІ");
