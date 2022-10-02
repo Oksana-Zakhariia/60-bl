@@ -1,4 +1,3 @@
-
 /*? Створіть масив genres з елементами Jazz і Blues.
 ? Додайте "rock'n'roll" до кінця.
 ? Виведіть у консоль перший елемент масиву.
@@ -15,8 +14,6 @@
 // // genres.splice(0, 0, "Country", "Reggy")
 // genres.unshift("Country", "Reggy")
 // console.log(genres);
-
-
 
 /*
 ? Напиши скрипт пошуку найдовшого слова в масиві.
@@ -40,9 +37,8 @@
 //         if (genre.length > longestWord.length) {
 //     longestWord = genre}
 //     }
-    
-// console.log(longestWord);
 
+// console.log(longestWord);
 
 /*
 ? У нас є кілька масивів із зарплатами співробітників з
@@ -57,7 +53,7 @@
 // // for (let i = 0; i < allSalarys.length; i += 1){
 // //     total += allSalarys[i];
 // // }
- 
+
 // // console.log(total)
 // const allSalarys = [...managerSalaries, ...developersSalaries];
 // console.log(allSalarys);
@@ -65,21 +61,47 @@
 //     acc += item
 // , 0)
 
-
 /* Потрібно розвернути масив у зворотньому напрямку
  не використовуючи методів масива і не створюючи нові масиви
  */
-// const array = [7, 7, 7, 3, 5, 5, 5];
-const array = [1, 2, 3, 4, 5, 6, 7];
-// console.log(array.reverse());
-for (let i = 0; i < array.length/2; i += 1) {
-    // console.log(array[i]);
-    const index = array.length - 1 - i 
-    const template = array[i];
-    array[i] = array[index];
-    array[index] = template;
+// // const array = [7, 7, 7, 3, 5, 5, 5];
+// const array = [1, 2, 3, 4, 5, 6, 7];
+// // console.log(array.reverse());
+// for (let i = 0; i < array.length/2; i += 1) {
+//     // console.log(array[i]);
+//     const index = array.length - 1 - i
+//     const template = array[i];
+//     array[i] = array[index];
+//     array[index] = template;
+// }
+// console.log(array);
+// // удачі всім! )))
+
+/*Потрібно перевітири чи є речення палінром*/
+
+// const str = 'Я несу гусеня';
+//янесугусеня
+// const str = 'Де помити мопед';
+// const str = 'І була пані на палубІ';
+// const str = 'Поліна неси Ром!';
+
+// function isPalindrome(str) {
+//   console.log(str);
+//   const normalizeString = str.toLowerCase();
+//   const replecedString = normalizeString.replaceAll(" ", "");
+//   const arrayString = replecedString.split("");
+//   const reversedArray = arrayString.reverse();
+//   const reversedString = reversedArray.join("");
+//   const palindrome = replecedString === reversedString;
+//   console.log(palindrome);
+// }
+// isPalindrome("Поліна неси Ром!");
+
+function isPalindrome(str) {
+  console.log(str);
+  const normalizeString = str.toLowerCase().replaceAll(" ", "");
+  const reversedString = normalizeString.split("").reverse().join("");
+  const palindrome = normalizeString === reversedString;
+  console.log(palindrome);
 }
-console.log(array);
-// удачі всім! )))
-
-
+isPalindrome("І була пані на палубІ");
