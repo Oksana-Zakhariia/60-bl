@@ -23,7 +23,7 @@
 ? Код має працювати для будь-якого масиву рядків.
 ? Використовуйте цикл для вирішення задачі.
 */
-const genres = ['Jazz', 'Blues', "rock'n'roll", 'Country', 'Reggy'];
+// const genres = ['Jazz', 'Blues', "rock'n'roll", 'Country', 'Reggy'];
 
 // function fundLongestWord(arr) {
 //     let longestWord = genres[0];
@@ -44,5 +44,25 @@ const genres = ['Jazz', 'Blues', "rock'n'roll", 'Country', 'Reggy'];
 // console.log(longestWord);
 
 
+/*
+? У нас є кілька масивів із зарплатами співробітників з
+? різних відділів, потрібно порахувати загальну суму зарплат
+*/
 
+ const managerSalaries = [1000, 1500, 2500, 4000, 5000];
+ const developersSalaries = [8000, 40000, 15000];
 
+// const allSalarys = managerSalaries.concat(developersSalaries);
+// let total = 0;
+// for (let i = 0; i < allSalarys.length; i += 1){
+//     total += allSalarys[i];
+// }
+ 
+// console.log(total)
+const allSalarys = [...managerSalaries, ...developersSalaries];
+console.log(allSalarys);
+const total = allSalarys.reduce((acc, item) => 
+    acc += item
+, 0)
+
+console.log(total)
