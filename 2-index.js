@@ -105,3 +105,27 @@
 //   console.log(palindrome);
 // }
 // isPalindrome("І була пані на палубІ");
+
+
+/*
+? Напишіть функцію calcAverage() яка приймає довільну кількість аргументів і повертає їхнє середнє значення.
+? За умови, що усі аругменти будуть лише числами.
+? Додай перевірку, що аргументами можуть бути не числа
+? Потрібно порахувати середнє значення аргументів (чисел)
+*/
+
+// function calcAverage() {
+//     let total = 0;
+//     let count = 0;
+//     for (let i = 0; i < arguments.length; i += 1) {
+//         if (typeof arguments[i] !== 'number') {
+//             continue;
+//         }
+//         total += arguments[i];
+//         count += 1;
+//         // console.log(total);
+//     }
+//     console.log(total / count);
+//     // console.log(arguments);
+// };
+// calcAverage(1, 2, 3, 4, 5, 'a', 'b');
