@@ -263,6 +263,33 @@ const cars = [
 // */
 
 // const getCarsWithDiscount = (array) => {
-//     return array.filter(({onSale}) => onSale ).map(({model})=> model)   
+//     return array.filter(({onSale}) => onSale ).map(({model})=> model)
 // }
 // console.table(getCarsWithDiscount(cars));
+
+
+const numbers = [1, 2, 3, 4, 61, 19, 10, 11, 20, 25, 74, 35, 92, 5, 27, 2, 41, 100, 1000, 4, 105, 010, 7, 3, 75, 1, 19, 10, 11, 20, 25, 2, 5, 27, 2, 41];
+  
+// const uniqNumbers = (array) => {
+//     return array.filter((element, index, array) => array.indexOf(element) === index)
+// }
+  
+// console.log(uniqNumbers(numbers));
+
+
+// const uniqNumbers = (array) => {
+//   return array.reduce((acc, element) => {
+//     if (!acc.includes(element)) {
+//       acc.push(element)
+//     } return acc;
+      
+//   }, [])
+// }
+
+// console.log(uniqNumbers(numbers));
+
+// const uniqNumbers = (array) => {
+//   return array.reduce((acc, element) => !acc.includes(element) ? [...acc, element]:  acc, [])
+// }
+
+// console.log(uniqNumbers(numbers));
