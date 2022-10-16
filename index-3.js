@@ -258,3 +258,11 @@ const cars = [
 // const filterByPrice = (array, threshold) => {
 // return array.filter(({price}) =>  price < threshold);};
 // console.log(filterByPrice(cars, 25000));
+// *
+// ? Нехай функція getCarsWithDiscount повертає масив моделей автомобілів властивість onSale яких true.
+// */
+
+// const getCarsWithDiscount = (array) => {
+//     return array.filter(({onSale}) => onSale ).map(({model})=> model)   
+// }
+// console.table(getCarsWithDiscount(cars));
