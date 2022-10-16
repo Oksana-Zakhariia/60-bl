@@ -119,8 +119,40 @@ const cars = [
 */
 
 // const carsWithDiscount = (array, value) => {
-//     return array.map(element => ({...element, price: Math.round(element.price / 100 * (100 - value))})) 
+//     return array.map(element => ({...element, price: Math.round(element.price / 100 * (100 - value))}))
 // }
  
 // console.log(carsWithDiscount(cars, 10));
 
+/*
+? Відфільтруємо масив, залишивши в ньому лише додатні числа:
+*/
+
+// const numbers = [-2, 5, 1, -5, -1, 1, 3, 4, -1];
+// const filterNumbers = numbers.filter((element) => {
+//   if (element > 0) {
+//      return true
+//    }
+//  })
+// console.log(filterNumbers)
+
+//  Відфільтруйте масив heroes за ключем об'єкта franchise.
+// */
+
+//  const heroes = [
+//   { name: 'Batman', franchise: 'DC' },
+//   { name: 'Ironman', franchise: 'Marvel' },
+//   { name: 'Thor', franchise: 'Marvel' },
+//   { name: 'Superman', franchise: 'DC' },
+// ];
+
+
+// const newKeys = heroes.filter(({ franchise }) => franchise === 'DC')
+    
+// const findFranchise = (array, value) => {
+//     return array.filter(({ franchise }) => franchise === value)
+    
+//   }
+  
+
+// console.log(findFranchise(heroes,'Marvel'))
