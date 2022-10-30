@@ -10,7 +10,7 @@
 //     this.name = name;
 //     this.age = age;
 //     this.numbersOfPost = numbersOfPost;
-   
+
 
 // }
 // User.prototype.getInfo = function () { return `Користувачеві ${this.name} ${this.age} років і в нього ${this.numbersOfPost} публікацій.` }
@@ -63,3 +63,34 @@
 // console.log(mango.email);
 // mango.email = "poly@mail.com";
 // console.log(mango.email);
+
+// Створити маркований список.
+//Створити кнопки "Add" "Remove", які змінюватимуть склад списку
+//Створити input з якого будемо отримувати значення, яке буде в li
+//* Парним li вказати червоне тло, непарним - синім
+//Для виконання завдання використовуйте createElement
+
+// const ol = document.createElement("ol");
+// const add = document.createElement("button");
+// const remove = document.createElement("button");
+// const input = document.createElement("input");
+// // console.log(ul, add, remove, input);
+// add.textContent = `add`;
+// remove.textContent = `remove`;
+// document.body.append(input, add, remove, ol);
+// add.addEventListener('click', () => {
+//     const value = input.value;
+//     const item = document.createElement("li");
+//     item.textContent = value ? value : `qwe`;
+//     ol.append(item);
+//     input.value = "";
+//     console.log(ol.children.length);
+//     const childrenCount = ol.children.length;
+//     const isEven = childrenCount % 2 === 0;
+//     item.style.background = isEven ? `red` : `blue`;
+// });
+// remove.addEventListener('click', () => {
+//     if (!ol.hasChildNodes()) { return };
+//     ol.lastElementChild.remove();
+// });
+
