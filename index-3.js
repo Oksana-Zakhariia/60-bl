@@ -293,3 +293,29 @@ const numbers = [1, 2, 3, 4, 61, 19, 10, 11, 20, 25, 74, 35, 92, 5, 27, 2, 41, 1
 // }
 
 // console.log(uniqNumbers(numbers));
+const tweets = [
+  { id: "000", likes: 5, tags: ["js", "nodejs"] },
+  { id: "001", likes: 2, tags: ["html", "css"] },
+  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+  { id: "003", likes: 8, tags: ["css", "react"] },
+  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+];
+// const calcularorTags = tweets.flatMap(({tags}) => tags
+  
+// ).reduce((acc, element) => {
+//   if (acc[element]) {
+//     acc[element] = acc[element] += 1;
+    
+//   }
+//   else {
+//     acc[element]=1
+//   }
+//   return acc;
+// },{})
+// console.log(calcularorTags)
+// const calcularorTags = tweets.flatMap(({tags}) => tags
+  
+// ).reduce((acc, element) => ({...acc, [element]:acc[element] ? acc[element] += 1 : 1}) ,{})
+  
+
+// console.log(calcularorTags)
